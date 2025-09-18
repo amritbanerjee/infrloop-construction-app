@@ -1,0 +1,498 @@
+# Product Requirements Document (PRD)
+## Infrloop - Construction Management Platform
+
+### Document Information
+- **Version**: 1.0
+- **Date**: September 18, 2025
+- **Author**: Product Team
+- **Status**: Draft
+
+---
+
+## 1. Executive Summary
+
+Infrloop is a comprehensive construction management SaaS platform designed to streamline project workflows, communication, and documentation for construction companies. The platform serves multiple user tiers with role-based access control and multi-tenant architecture.
+
+### 1.1 Vision
+To create the most intuitive and powerful construction management platform that scales from individual contractors to enterprise construction companies.
+
+### 1.2 Mission
+Simplify construction project management through digital workflows, real-time collaboration, and intelligent automation.
+
+---
+
+## 2. Product Overview
+
+### 2.1 Target Market
+- **Primary**: Construction companies (10-500 employees)
+- **Secondary**: Independent contractors and large enterprise construction firms
+- **Tertiary**: Architecture firms, engineering consultants
+
+### 2.2 Key Value Propositions
+1. **Unified Platform**: All construction management needs in one place
+2. **Multi-tenant Architecture**: Secure organization separation
+3. **Role-based Access**: Granular permission control
+4. **Mobile-first Design**: Field-optimized user experience
+5. **Scalable Workflows**: From simple forms to complex approval processes
+
+---
+
+## 3. User Personas & Roles
+
+### 3.1 Platform Admin (Infrloop Team)
+**Role**: System-level administration and platform management
+
+**Responsibilities**:
+- Roll out new form templates across organizations
+- Deploy new workflow templates
+- Manage submittal process templates
+- Bulk user management across organizations
+- Platform monitoring and maintenance
+- Customer onboarding and support
+
+**Key Features**:
+- Global template management
+- Multi-tenant user administration
+- System analytics and monitoring
+- Customer management dashboard
+
+### 3.2 Organization Admin
+**Role**: Company/organization-level administration
+
+**Responsibilities**:
+- Organization user management
+- Role creation and assignment
+- Project template setup
+- Workflow configuration for organization
+- Enterprise features management (if applicable)
+- Bulk project operations
+
+**Key Features**:
+- User role management
+- Bulk project creation
+- Organization-wide workflow setup
+- Template customization
+- User onboarding and training
+
+### 3.3 Project User (Field Worker/Manager)
+**Role**: Day-to-day project execution and management
+
+**Responsibilities**:
+- Project-specific form creation and completion
+- Drawing uploads and management
+- Submittal creation and tracking
+- Photography and documentation
+- Team communication and collaboration
+- Progress reporting
+
+**Key Features**:
+- Project dashboard
+- Form builder and completion
+- Document management
+- Photo capture and annotation
+- Chat and messaging
+- Email integration
+- Submittal workflows
+
+---
+
+## 4. Core Features & User Flows
+
+### 4.1 Authentication & Onboarding
+
+#### Login & Authentication
+- Multi-factor authentication (MFA)
+- Single sign-on (SSO) for enterprise customers
+- Password reset and recovery
+- Session management
+
+#### Onboarding Flow
+1. **Welcome Screen**: App introduction and value proposition
+2. **Account Setup**: Basic user information
+3. **Organization Assignment**: Link to organization or create new
+4. **Role Selection**: Choose user type and permissions
+5. **Feature Tour**: Interactive walkthrough
+6. **First Project Setup**: Guided project creation (for applicable users)
+
+### 4.2 User Management System
+
+#### Platform Admin Features
+- **Global User Directory**: View all users across organizations
+- **Organization Management**: Create, modify, delete organizations
+- **Template Distribution**: Push new templates to selected organizations
+- **Bulk Operations**: Mass user imports, role assignments
+- **Analytics Dashboard**: Usage metrics, adoption rates
+
+#### Organization Admin Features
+- **User Invitation System**: Email-based user invitations
+- **Role Matrix**: Create custom roles with specific permissions
+- **Department Management**: Organize users by departments/teams
+- **Bulk Project Assignment**: Assign multiple users to projects
+- **Organization Settings**: Branding, preferences, integrations
+
+#### User Profile Management
+- **Profile Customization**: Avatar, contact information, skills
+- **Notification Preferences**: Email, push, in-app notifications
+- **Security Settings**: Password, MFA, device management
+- **Activity History**: User action logs and project history
+
+### 4.3 Project Management Core
+
+#### Project Dashboard
+- **Project Overview**: Status, timeline, budget, team
+- **Quick Actions**: Most common tasks for user role
+- **Recent Activity**: Latest updates, messages, submissions
+- **Progress Tracking**: Visual progress indicators
+- **Weather Integration**: Location-based weather data
+- **Calendar Integration**: Project milestones and deadlines
+
+#### Project Creation & Setup
+- **Template Selection**: Choose from organization or platform templates
+- **Basic Information**: Name, location, timeline, budget
+- **Team Assignment**: Add team members with specific roles
+- **Workflow Configuration**: Set up approval processes
+- **Document Structure**: Organize folders and categories
+
+### 4.4 Forms & Documentation
+
+#### Dynamic Form Builder
+- **Drag-and-Drop Interface**: Visual form creation
+- **Field Types**: Text, numbers, dates, photos, signatures, GPS coordinates
+- **Conditional Logic**: Show/hide fields based on responses
+- **Template Library**: Pre-built industry-standard forms
+- **Version Control**: Track form changes and updates
+- **Offline Capability**: Complete forms without internet connection
+
+#### Form Categories
+- **Safety Inspections**: Daily safety checks, incident reports
+- **Quality Control**: Inspection checklists, defect reports
+- **Progress Reports**: Daily reports, milestone updates
+- **Time Tracking**: Labor hours, equipment usage
+- **Material Management**: Delivery receipts, inventory counts
+- **Custom Forms**: Organization-specific requirements
+
+### 4.5 Document & Drawing Management
+
+#### Drawing Management
+- **Upload System**: Support for CAD files, PDFs, images
+- **Version Control**: Track drawing revisions and updates
+- **Markup Tools**: Annotate drawings with notes, measurements
+- **Layer Management**: Show/hide drawing layers
+- **Comparison Tools**: Compare different versions
+- **Mobile Viewing**: Optimized for tablet and phone viewing
+
+#### Document Organization
+- **Folder Structure**: Hierarchical organization system
+- **Tagging System**: Searchable tags and categories
+- **Search Functionality**: Full-text search across documents
+- **Access Control**: Document-level permissions
+- **Audit Trail**: Track who accessed or modified documents
+
+### 4.6 Submittal Management
+
+#### Submittal Workflows
+- **Creation Process**: Template-based submittal creation
+- **Approval Chains**: Multi-level approval processes
+- **Status Tracking**: Real-time status updates
+- **Notification System**: Automated status change notifications
+- **Deadline Management**: Due date tracking and reminders
+- **Integration**: Connect with external approval systems
+
+#### Submittal Types
+- **Material Submittals**: Product data, samples, certifications
+- **Shop Drawings**: Fabrication drawings, installation details
+- **Product Data**: Specifications, warranties, maintenance manuals
+- **Samples**: Physical or digital samples for approval
+- **Test Reports**: Quality control and testing documentation
+
+### 4.7 Communication & Collaboration
+
+#### Chat System
+- **Group Chats**: Project-based team communication
+- **Direct Messages**: One-on-one conversations
+- **File Sharing**: Share documents, photos, drawings
+- **Message Threads**: Organized conversation topics
+- **Search History**: Find past conversations and files
+- **Push Notifications**: Real-time message alerts
+
+#### Email Integration
+- **Two-way Sync**: Send and receive emails from app
+- **Thread Management**: Group related emails
+- **Attachment Handling**: Download and share email attachments
+- **Contact Integration**: Sync with organization directory
+- **Template System**: Pre-written email templates
+
+### 4.8 Photography & Visual Documentation
+
+#### Photo Capture
+- **Camera Integration**: High-quality photo capture
+- **GPS Tagging**: Automatic location stamping
+- **Timestamp**: Automatic date/time recording
+- **Annotation Tools**: Add notes, arrows, highlights
+- **Before/After Comparisons**: Progress documentation
+- **Batch Upload**: Multiple photo uploads
+
+#### Photo Organization
+- **Album System**: Organize by project phases, locations
+- **Tagging**: Searchable tags and categories
+- **Sharing**: Share with team members or external parties
+- **Compression**: Optimize for mobile data usage
+- **Backup**: Cloud storage with version history
+
+---
+
+## 5. Technical Architecture
+
+### 5.1 App Navigation Structure
+
+Based on your requirements, here's the recommended navigation structure:
+App Root
+│
+├── Authentication Flow
+│ ├── Login Screen
+│ ├── Forgot Password
+│ ├── MFA Verification
+│ └── Account Recovery
+│
+├── Onboarding Flow (Stack)
+│ ├── Welcome
+│ ├── Account Setup
+│ ├── Organization Assignment
+│ ├── Role Selection
+│ ├── Feature Tour
+│ └── Complete Setup
+│
+└── Main App (Stack)
+├── (tabs) - Main Navigation
+│ ├── Dashboard (Home)
+│ ├── Projects
+│ ├── Messages
+│ └── More
+│
+├── Profile Stack
+│ ├── Profile View
+│ ├── Edit Profile
+│ ├── Settings
+│ └── Security
+│
+├── Project Stack
+│ ├── Project Dashboard
+│ ├── Forms
+│ ├── Documents
+│ ├── Submittals
+│ ├── Photos
+│ └── Team
+│
+├── Admin Stack (Conditional)
+│ ├── User Management
+│ ├── Role Management
+│ ├── Organization Settings
+│ ├── Template Management
+│ └── Bulk Operations
+│
+└── Platform Admin Stack (Conditional)
+├── Global Dashboard
+├── Organization Management
+├── Template Distribution
+├── User Analytics
+└── System Settings
+
+### 5.2 Recommended File Structure
+app/
+├── layout.tsx # Root layout with auth check
+├── (auth)/ # Authentication flow
+│ ├── layout.tsx
+│ ├── login.tsx
+│ ├── forgot-password.tsx
+│ └── mfa-verification.tsx
+├── (onboarding)/ # Onboarding flow
+│ ├── layout.tsx
+│ ├── welcome.tsx
+│ ├── account-setup.tsx
+│ ├── organization.tsx
+│ ├── role-selection.tsx
+│ ├── feature-tour.tsx
+│ └── complete.tsx
+├── (app)/ # Main authenticated app
+│ ├── layout.tsx
+│ ├── (tabs)/ # Tab navigation
+│ │ ├── layout.tsx
+│ │ ├── dashboard.tsx # Home/Dashboard
+│ │ ├── projects.tsx
+│ │ ├── messages.tsx
+│ │ └── more.tsx
+│ ├── profile/
+│ │ ├── layout.tsx
+│ │ ├── index.tsx
+│ │ ├── edit.tsx
+│ │ ├── settings.tsx
+│ │ └── security.tsx
+│ ├── project/
+│ │ ├── layout.tsx
+│ │ ├── id.tsx # Project dashboard
+│ │ ├── id/forms.tsx
+│ │ ├── id/documents.tsx
+│ │ ├── id/submittals.tsx
+│ │ ├── id/photos.tsx
+│ │ └── id/team.tsx
+│ ├── admin/ # Organization admin
+│ │ ├── layout.tsx
+│ │ ├── users.tsx
+│ │ ├── roles.tsx
+│ │ ├── settings.tsx
+│ │ ├── templates.tsx
+│ │ └── bulk-operations.tsx
+│ └── platform-admin/ # Platform admin
+│ ├── layout.tsx
+│ ├── dashboard.tsx
+│ ├── organizations.tsx
+│ ├── templates.tsx
+│ ├── analytics.tsx
+│ └── system.tsx
+├── +html.tsx
+└── +not-found.tsx
+
+---
+
+## 6. User Stories & Acceptance Criteria
+
+### 6.1 Platform Admin Stories
+
+**Epic**: Template Management
+- **Story**: As a platform admin, I want to create new form templates so that organizations can use standardized forms
+- **Acceptance Criteria**:
+  - Can create forms with various field types
+  - Can set template visibility (public/private)
+  - Can distribute templates to specific organizations
+  - Can track template usage analytics
+
+**Epic**: Organization Management
+- **Story**: As a platform admin, I want to manage organizations so that I can control platform access and features
+- **Acceptance Criteria**:
+  - Can create new organizations
+  - Can set organization-level permissions
+  - Can view organization usage statistics
+  - Can enable/disable features per organization
+
+### 6.2 Organization Admin Stories
+
+**Epic**: User Management
+- **Story**: As an organization admin, I want to invite users to my organization so that my team can use the platform
+- **Acceptance Criteria**:
+  - Can send email invitations with role assignments
+  - Can set user permissions and project access
+  - Can bulk import users from CSV
+  - Can deactivate users when they leave
+
+**Epic**: Project Setup
+- **Story**: As an organization admin, I want to create project templates so that projects can be set up consistently
+- **Acceptance Criteria**:
+  - Can define standard project structure
+  - Can set default workflows and forms
+  - Can assign default team roles
+  - Can create multiple templates for different project types
+
+### 6.3 Project User Stories
+
+**Epic**: Daily Work Management
+- **Story**: As a project user, I want to complete forms on my mobile device so that I can document work in the field
+- **Acceptance Criteria**:
+  - Can complete forms offline
+  - Can attach photos to form responses
+  - Can capture GPS coordinates automatically
+  - Can save drafts and complete later
+
+**Epic**: Communication
+- **Story**: As a project user, I want to communicate with my team so that we can coordinate work effectively
+- **Acceptance Criteria**:
+  - Can send messages to individuals or groups
+  - Can share photos and documents in chat
+  - Can receive push notifications for urgent messages
+  - Can search message history
+
+---
+
+## 7. Success Metrics & KPIs
+
+### 7.1 User Engagement
+- Daily Active Users (DAU)
+- Monthly Active Users (MAU)
+- Session duration and frequency
+- Feature adoption rates
+- User retention (30, 60, 90 days)
+
+### 7.2 Business Metrics
+- Customer Acquisition Cost (CAC)
+- Monthly Recurring Revenue (MRR)
+- Customer Lifetime Value (CLV)
+- Churn rate by user type
+- Conversion from trial to paid
+
+### 7.3 Product Performance
+- Form completion rates
+- Photo upload volume
+- Submittal approval times
+- Platform uptime and performance
+- Mobile app crash rates
+
+---
+
+## 8. Implementation Phases
+
+### Phase 1: Foundation (Months 1-3)
+- User authentication and roles
+- Basic project creation
+- Simple form builder
+- Photo capture and storage
+- Basic messaging
+
+### Phase 2: Core Features (Months 4-6)
+- Advanced form builder
+- Document management
+- Submittal workflows
+- Team collaboration tools
+- Admin dashboards
+
+### Phase 3: Advanced Features (Months 7-9)
+- Template distribution system
+- Advanced analytics
+- Integration capabilities
+- Bulk operations
+- Enterprise features
+
+### Phase 4: Scale & Optimize (Months 10-12)
+- Performance optimization
+- Advanced reporting
+- API for third-party integrations
+- Mobile app refinements
+- Customer feedback implementation
+
+---
+
+## 9. Risk Assessment
+
+### 9.1 Technical Risks
+- **Multi-tenancy Complexity**: Risk of data leakage between organizations
+- **Mobile Performance**: Large file handling on mobile devices
+- **Offline Functionality**: Data synchronization challenges
+- **Scalability**: Performance with large user bases
+
+### 9.2 Business Risks
+- **Market Competition**: Established players in construction software
+- **User Adoption**: Learning curve for field workers
+- **Customer Retention**: Switching costs from existing solutions
+- **Regulatory Compliance**: Construction industry regulations
+
+### 9.3 Mitigation Strategies
+- Implement robust testing for multi-tenant architecture
+- Use progressive file upload and compression
+- Design offline-first architecture with conflict resolution
+- Plan for horizontal scaling from the beginning
+- Focus on superior mobile UX as differentiation
+- Provide comprehensive onboarding and training
+- Build strong customer success programs
+- Stay current with industry regulations and standards
+
+---
+
+This PRD provides a comprehensive foundation for your construction management platform.
